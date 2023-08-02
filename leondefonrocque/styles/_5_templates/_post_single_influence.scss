@@ -1,0 +1,71 @@
+.single-influence-main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: $layout-breakpoint-end-tablette) {
+        margin-top: 40px;
+        & .single-influence-content-container{
+            width: 70%;
+        }
+    }
+    & .single-influence-content-container{
+    
+        & img {
+            display: block;
+            width: 100% !important;
+            max-height: 500px;
+            object-fit: cover;
+            margin: 60px 0px 0 0;
+        }
+        & p{
+            font-family: $font-main-400;
+            text-align: left;
+            font-size: 16px;
+            color: $color-black;
+        }
+
+        & h1,h2,h3{
+            font-family: $font-main-500;
+            text-align: left;
+            font-size: 20px;
+            color: $color-black;
+        }
+    }
+
+    & .single-influence-end-section{
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin-top: 50px;
+
+        & span, p:last-child{
+            font-family: $font-main-600;
+            font-weight: bold;
+        }
+    }
+}
+@media (max-width: $layout-breakpoint-end-tablette) {
+    .single-influence-main-section, .single-influence-separator{
+        max-width: 440px;
+        margin: auto;
+        .single-influence-end-section{
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (min-width: $layout-breakpoint-end-tablette) {
+    .single-influence-separator{
+        margin-top: 100px;
+    }
+}
+
+.single-influence-separator{
+    padding: 0px 60px;
+    & .single-influence-separator-line{
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.1);
+
+    }
+    
+}
